@@ -1,0 +1,8 @@
+Data Type Basics
+-----------------
+- Data Type: A set of values and operations you can run on those values.
+- Abstract Data Type (ADT): Kind of like an object/utility/containers capable of performing operations on data. In Java, these are created using classes.
+
+- Container/black box that you can invoke methods on it. It contains data and does thngs with data. 
+- This is what a lot of data structures are referred to as... abstract data types. 
+- Example: An array is an abstract data type because it takes data and has specific functions that can be used on data of type Array.
