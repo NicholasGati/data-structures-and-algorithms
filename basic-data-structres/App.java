@@ -1,21 +1,42 @@
 public class App {
   public static void main(String[] args) {
+    /**
+     * Initialize a Stack.
+     */
     Stack theStack = new Stack(3);
     theStack.push(20);
     theStack.push(40);
     theStack.push(60);
     theStack.push(80);
 
-    int i = -1;
+    // Print out contents of stack.
+    System.out.print("[ ");
     while (!theStack.isEmpty()) {  
       long value = theStack.pop();
-      System.out.println(value);
+      System.out.print(value + " ");
     }
+    System.out.println(" ]");
 
-    // Using a character stack.
+    /**
+     * Using a character stack.
+     */
     System.out.println(reverse("nicholas"));
     System.out.println(reverse("hello"));
     System.out.println(reverse("data structures and algorithms"));
+
+    /**
+     * Initialize a Queue.
+     */
+    Queue theQueue = new Queue(5);
+    theQueue.insert(40);
+    theQueue.insert(10);
+    theQueue.insert(3);
+    theQueue.insert(19);
+    theQueue.insert(76);
+    theQueue.view();
+
+    System.out.println(theQueue.remove());
+    System.out.println(theQueue.remove());
   }
 
   public static String reverse(String word) {
