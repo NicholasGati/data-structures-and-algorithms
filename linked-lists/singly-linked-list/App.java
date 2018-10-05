@@ -1,5 +1,5 @@
 public class App {
-  
+
   public static void main(String[] args) {
     SinglyLinkedList sll = new SinglyLinkedList();
 
@@ -13,13 +13,6 @@ public class App {
     // Insert as last node.
     sll.insertLast(754);
     sll.insertLast(2);
-    sll.displayList();
-
-    // Insert in a more efficient way which uses "last" reference.
-    sll.insertLastEfficient(999000);
-    sll.displayList();
-
-    sll.insertLastEfficient(1);
     sll.displayList();
   }
 }
